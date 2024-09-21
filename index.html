@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slider">
+      <img src="images1.jpg" alt="Image 1">
+      <img src="images2.jpg" alt="Image 2">
+      <img src="images3.jpg" alt="Image 3">
+    </div>
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Image Slider with Dots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="images1.jpg" alt="Image 1">
+            <img src="images2.jpg" alt="Image 2">
+            <img src="images3.jpg" alt="Image 3">
+        </div>
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Play/Pause Button -->
+        <button id="playPauseBtn" onclick="togglePlayPause()">Pause</button>
+
+        <!-- Navigation Dots -->
+        <div class="dots">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
